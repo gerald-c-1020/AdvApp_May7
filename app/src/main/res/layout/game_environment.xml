@@ -1,0 +1,37 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.marc.fragmenttests2.GameEnvironment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.example.marc.fragmenttests2.PictureFragment"
+            android:id="@+id/fragment"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            tools:layout="@layout/picture_fragment" />
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.example.marc.fragmenttests2.LogFragment"
+            android:id="@+id/fragment2"
+            android:layout_below="@+id/fragment"
+            android:layout_centerHorizontal="true"
+            tools:layout="@layout/text_log_fragment" />
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.example.marc.fragmenttests2.ChoicesFragment"
+            android:id="@+id/fragment3"
+            android:layout_below="@+id/fragment2"
+            android:layout_centerHorizontal="true"
+            tools:layout="@layout/choices_fragment" />
+    </RelativeLayout>
+</ScrollView>

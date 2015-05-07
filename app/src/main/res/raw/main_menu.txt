@@ -1,0 +1,5 @@
+* 00 Choose an adventure!
+# 00 00 01 Adventure #1
+# 00 01 02 Adventure #2
+# 00 02 03 Adventure #3
+# 00 03 04 Adventure #4

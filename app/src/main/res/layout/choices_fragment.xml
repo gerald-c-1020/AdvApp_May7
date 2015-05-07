@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+
+    <Button
+        android:id="@+id/yes_button"
+        android:text="@string/yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp" />
+    <Button
+        android:id="@+id/no_button"
+        android:text="@string/no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yes_button"
+        android:layout_marginBottom="3dp" />
+    <Button
+        android:id="@+id/maybe_button"
+        android:text="@string/maybe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_button"
+        android:layout_marginBottom="3dp" />
+    <Button
+        android:id="@+id/idk_button"
+        android:text="@string/idk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maybe_button"
+        android:layout_marginBottom="3dp" />
+
+
+</RelativeLayout>
