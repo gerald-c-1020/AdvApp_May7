@@ -18,26 +18,12 @@
         android:text="@string/game_environment"
         android:layout_gravity="center_horizontal"
         android:id="@+id/game"
-        android:textSize="10pt"
-        android:gravity="center_horizontal"
-        android:padding="10dp"
-        android:background="@color/material_deep_teal_500"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"/>
-
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/settings"
-        android:textSize="10pt"
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/settings"
+        android:textSize="12pt"
         android:gravity="center_horizontal"
         android:padding="10dp"
         android:background="@color/material_deep_teal_500"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>

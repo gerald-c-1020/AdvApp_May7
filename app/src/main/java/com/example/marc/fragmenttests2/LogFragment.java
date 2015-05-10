@@ -63,8 +63,10 @@ public class LogFragment extends Fragment {
     {
         // This is the second variation on the addText method, used to proceed through a story, and
         //    assumes there's no change in which "script" we're using.
-        stream = t.getText().toString();
-        stream += in + btnText[story][num] + "\n";
+        //May 7 2015: log no longer displays the entire story text
+
+        // stream = t.getText().toString();
+        stream = in + btnText[story][num] + "\n";
         story = location;
         t.setText(stream);
         question();

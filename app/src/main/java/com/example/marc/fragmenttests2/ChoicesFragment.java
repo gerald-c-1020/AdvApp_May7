@@ -2,7 +2,8 @@ package com.example.marc.fragmenttests2;
 
 
 import android.app.Activity;
-import android.app.Fragment;
+//import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -19,7 +20,7 @@ public class ChoicesFragment extends Fragment {
     private Button[] btns;
     private int id;
 
-    private int adv; // Added by Gerald
+    protected int adv; // Added by Gerald
     private int story; // Added by Gerald
     private String[][] btnText; // Added by Gerald
 
@@ -79,7 +80,7 @@ public class ChoicesFragment extends Fragment {
                     setButtonText();
                     activityCommander.choice(i - 4);
                 }
-                else if (btns[i].getText().toString().substring(0).equals("Return to Main Menu"))
+                else if (btns[i].getText().toString().substring(0).equals("Return to Story Menu"))
                 {
                     adv = -1;
                     setButtonText();
@@ -113,7 +114,7 @@ public class ChoicesFragment extends Fragment {
             for (int i = 0; i < btns.length; i++) {
                 if (story == -1 || btnText[story][0] == null) // When we reach a part of the story with no options
                 {
-                    btns[0].setText("Return to Main Menu");
+                    btns[0].setText("Return to Story Menu");
                     btns[1].setVisibility(View.GONE);
                     btns[2].setVisibility(View.GONE);
                     btns[3].setVisibility(View.GONE);

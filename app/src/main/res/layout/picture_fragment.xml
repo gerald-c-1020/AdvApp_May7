@@ -8,5 +8,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/pic"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/robocop" />
+        android:src="@drawable/storymenu" />
 </LinearLayout>

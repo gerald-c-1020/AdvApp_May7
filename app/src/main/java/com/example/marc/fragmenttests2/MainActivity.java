@@ -19,6 +19,7 @@ public class MainActivity extends ActionBarActivity implements View.OnTouchListe
         setContentView(R.layout.activity_main);
         t = (TextView) findViewById(R.id.game);
         t.setOnTouchListener(this);
+        getSupportActionBar().setTitle("Title Menu");
     }
 
 
